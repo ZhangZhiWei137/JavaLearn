@@ -1,6 +1,6 @@
 package AnonymityInnerClass;
 /**
-*	外部内、内部类
+*	外部类、匿名内部类
 */
 public class Outer {
 
