@@ -35,7 +35,9 @@ public class Demo06 {
 		
 		System.out.println("active thread in pool are: "+ ((ThreadPoolExecutor)threadPool).getActiveCount());
 		System.out.println("pool size is : "+ ((ThreadPoolExecutor)threadPool).getPoolSize());
+		
 		threadPool.shutdown();//shutdown() 只是关闭了提交通道，用submit()是无效的；而内部该怎么跑还是怎么跑，跑完再停。
+		
 		System.out.println("pool is shotdown.");
 		System.out.println("active thread in pool are: "+ ((ThreadPoolExecutor)threadPool).getActiveCount());
 		System.out.println("pool size is : "+ ((ThreadPoolExecutor)threadPool).getPoolSize());
